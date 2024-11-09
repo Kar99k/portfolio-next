@@ -10,8 +10,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-sans)"],
-        mono: ["var(--font-mono)"],
+        'maison-bold': ['MaisonNeue-ExtendedBold', 'sans-serif'],
+        'maison-demi-bold': ['MaisonNeue-ExtendedDemiBold', 'sans-serif'],
+        'maison-medium': ['MaisonNeue-ExtendedMedium', 'sans-serif'],
+        'maison-light': ['MaisonNeue-ExtendedLight', 'sans-serif'],
       },
     },
   },
