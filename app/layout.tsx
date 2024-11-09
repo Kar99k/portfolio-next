@@ -1,10 +1,10 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
-import localFont from "next/font/local";
 
 import { Providers } from "./providers";
 
 import { siteConfig } from "@/config/site";
+import { maison } from "@/config/fonts";
 
 export const metadata: Metadata = {
   title: {
@@ -13,20 +13,9 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   icons: {
-    icon: "/favicon.ico",
+    icon: "/space.png",
   },
 };
-
-const maison = localFont({
-  src: [
-    {
-      path: "../public/fonts/MaisonNeue-ExtendedMedium.woff2",
-      weight: "500",
-      style: "normal",
-    },
-  ],
-  display: "swap",
-});
 
 export const viewport: Viewport = {
   themeColor: [
@@ -44,7 +33,7 @@ export default function RootLayout({
     <html suppressHydrationWarning lang="en">
       <head />
       <body className={maison.className}>
-        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+        <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           {children}
         </Providers>
       </body>

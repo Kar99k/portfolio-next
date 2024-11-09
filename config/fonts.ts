@@ -1,11 +1,12 @@
-import { Fira_Code as FontMono, Inter as FontSans } from "next/font/google";
+import localFont from "next/font/local";
 
-export const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
-
-export const fontMono = FontMono({
-  subsets: ["latin"],
-  variable: "--font-mono",
+export const maison = localFont({
+  src: [
+    {
+      path: "../public/fonts/MaisonNeue-ExtendedMedium.woff2",
+      weight: "500",
+      style: "normal",
+    },
+  ],
+  display: "swap",
 });

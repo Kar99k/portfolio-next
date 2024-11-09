@@ -2,7 +2,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Karthikeyan's Space+",
+  name: "Karthikeyan's Space",
   description: "Hi👋🏽, Welcome to my space checkout my Works and Blog articles",
   navItems: [
     {
