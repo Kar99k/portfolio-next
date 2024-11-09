@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "BG": "#121212",
+        BG: "#121212",
         "orange-9": "#f76b15",
         "orange-10": "#e95f00",
         "orange-3": "#351c10",

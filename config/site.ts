@@ -1,3 +1,11 @@
+import {
+  BriefcaseBusiness,
+  House,
+  Newspaper,
+  Phone,
+  UserRound,
+} from "lucide-react";
+
 /* eslint-disable prettier/prettier */
 export type SiteConfig = typeof siteConfig;
 
@@ -8,22 +16,27 @@ export const siteConfig = {
     {
       label: "Home",
       href: "/",
+      icon: House,
     },
     {
       label: "Works",
       href: "/works",
+      icon: BriefcaseBusiness,
     },
     {
       label: "Blogs",
       href: "/blogs",
+      icon: Newspaper,
     },
     {
       label: "About",
       href: "/about",
+      icon: UserRound,
     },
     {
       label: "Contact",
       href: "/contact",
+      icon: Phone,
     },
   ],
   links: {

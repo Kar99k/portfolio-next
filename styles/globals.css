@@ -3,38 +3,41 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'MaisonNeue-ExtendedBold';
-    src: url('../public/fonts/MaisonNeue-ExtendedBold.woff2') format('woff2'),
-        url('../public/fonts/MaisonNeue-ExtendedBold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "MaisonNeue-ExtendedBold";
+  src:
+    url("../public/fonts/MaisonNeue-ExtendedBold.woff2") format("woff2"),
+    url("../public/fonts/MaisonNeue-ExtendedBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'MaisonNeue-ExtendedDemiBold';
-    src: url('../public/fonts/MaisonNeue-ExtendedDemiBold.woff2') format('woff2'),
-        url('../public/fonts/MaisonNeue-ExtendedDemiBold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+  font-family: "MaisonNeue-ExtendedDemiBold";
+  src:
+    url("../public/fonts/MaisonNeue-ExtendedDemiBold.woff2") format("woff2"),
+    url("../public/fonts/MaisonNeue-ExtendedDemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'MaisonNeue-ExtendedMedium';
-    src: url('../public/fonts/MaisonNeue-ExtendedMedium.woff2') format('woff2'),
-        url('../public/fonts/MaisonNeue-ExtendedMedium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: "MaisonNeue-ExtendedMedium";
+  src:
+    url("../public/fonts/MaisonNeue-ExtendedMedium.woff2") format("woff2"),
+    url("../public/fonts/MaisonNeue-ExtendedMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'MaisonNeue-ExtendedLight';
-    src: url('../public/fonts/MaisonNeue-ExtendedLight.woff2') format('woff2'),
-        url('../public/fonts/MaisonNeue-ExtendedLight.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
+  font-family: "MaisonNeue-ExtendedLight";
+  src:
+    url("../public/fonts/MaisonNeue-ExtendedLight.woff2") format("woff2"),
+    url("../public/fonts/MaisonNeue-ExtendedLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
-

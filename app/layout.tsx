@@ -1,10 +1,11 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
+import clsx from "clsx";
 
 import { Providers } from "./providers";
 
-import { siteConfig } from "@/config/site";
 import { maison } from "@/config/fonts";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: {
@@ -32,8 +33,8 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <head />
-      <body className={maison.className}>
-        <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
+      <body className={clsx(maison.className, "min-h-screen dark:bg-BG")}>
+        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           {children}
         </Providers>
       </body>
