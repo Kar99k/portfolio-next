@@ -6,6 +6,7 @@ import { Providers } from "./providers";
 
 import { maison } from "@/config/fonts";
 import { siteConfig } from "@/config/site";
+import NavBar from "@/components/organism/NavBar";
 
 export const metadata: Metadata = {
   title: {
@@ -35,7 +36,12 @@ export default function RootLayout({
       <head />
       <body className={clsx(maison.className, "min-h-screen dark:bg-BG")}>
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          {children}
+          <div className="flex flex-col xl:flex-row">
+            <header>
+              <NavBar />
+            </header>
+            <main className="container mx-auto">{children}</main>
+          </div>
         </Providers>
       </body>
     </html>

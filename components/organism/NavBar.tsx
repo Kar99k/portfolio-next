@@ -36,7 +36,7 @@ const NavBar = () => {
   });
 
   return (
-    <div className="xl:w-[340px] border-gray-4 border-r-1 h-svh">
+    <div className="border-gray-4 border-r-1 xl:h-dvh xl:w-[340px]">
       <div className="flex justify-between border-gray-4 border-b-1">
         <div className="flex gap-2 items-center p-6 w-full">
           <Link className="text-xl" href="/">
@@ -94,7 +94,7 @@ const NavBar = () => {
         {isOpen && (
           <motion.div
             animate={{ height: "auto", opacity: 1 }}
-            className="overflow-hidden"
+            className="absolute z-50 overflow-hidden w-full xl:static bg-BG"
             exit={{ height: 0, opacity: 0 }}
             initial={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}

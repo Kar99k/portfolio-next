@@ -40,10 +40,9 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "https://github.com/nextui-org/nextui",
-    twitter: "https://twitter.com/getnextui",
-    docs: "https://nextui.org",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    linkedin: "https://www.linkedin.com/in/karthikeyan-venkateswaran/",
+    github: "https://github.com/Kar99k",
+    whatsapp: "",
+    twitter: "",
   },
 };
