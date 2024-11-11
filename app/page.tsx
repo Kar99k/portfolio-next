@@ -1,9 +1,26 @@
+import { Divider } from "@nextui-org/divider";
+
 import IntroContent from "@/components/organism/IntroContent";
+import SectionTemplate from "@/components/templates/SectionTemplate";
+import Works from "@/components/organism/Works";
 
 export default function Home() {
   return (
-    <div className="p-4 md:p-8 xl:p-8">
-      <IntroContent />
+    <div className="">
+      <section className="container mx-auto">
+        <IntroContent />
+      </section>
+      <Divider />
+
+      <SectionTemplate>
+        <div className="" />
+      </SectionTemplate>
+      <Divider />
+
+      <section className="container mx-auto">
+        <Works />
+      </section>
+      <Divider />
     </div>
   );
 }

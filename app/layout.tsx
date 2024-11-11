@@ -36,11 +36,12 @@ export default function RootLayout({
       <head />
       <body className={clsx(maison.className, "min-h-screen dark:bg-BG")}>
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="flex flex-col xl:flex-row">
-            <header>
+          <div className="flex flex-col xl:grid xl:grid-cols-[340px_1fr] min-h-screen">
+            <header className="xl:sticky xl:top-0 xl:h-screen bg-BG">
               <NavBar />
             </header>
-            <main className="container mx-auto">{children}</main>
+
+            <main className="w-full">{children}</main>
           </div>
         </Providers>
       </body>

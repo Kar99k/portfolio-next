@@ -12,7 +12,7 @@ const IntroContent = () => {
   };
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 p-4 md:p-8 xl:p-8">
       <Image alt="avatars" height={103} src="/image/avatar.png" width={106} />
       <span className="text-3xl xl:text-4xl">
         Hey, I’m Karthikeyan—a <i>passionate</i> Frontend Engineer and tech
@@ -32,7 +32,7 @@ const IntroContent = () => {
               variant="bordered"
               onClick={() =>
                 handleClick(
-                  siteConfig.links[name as keyof typeof siteConfig.links],
+                  siteConfig.links[name as keyof typeof siteConfig.links]
                 )
               }
             >

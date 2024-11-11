@@ -8,4 +8,15 @@ declare global {
     Icon: React.ComponentType<LucideProps>;
     href: string;
   };
+
+  type HeadingProps = {
+    subtitle: string;
+    heading: string;
+  };
+
+  interface ThumbnailProps {
+    thumbnailUrl: string;
+    subtitle: HeadingProps["subtitle"];
+    heading: HeadingProps["heading"];
+  }
 }
