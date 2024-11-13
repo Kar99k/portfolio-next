@@ -7,7 +7,7 @@ const Works = () => {
   return (
     <SectionTemplate>
       <div className="text-3xl">Featured Works</div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
         {workItem?.map((item, index) => {
           return (
             <ThumbNail

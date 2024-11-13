@@ -1,7 +1,7 @@
 export const workItem: WorkItem[] = [
   {
     title: "Project 1",
-    thumbNailUrl: "/thumbnail/work/work_1.png",
+    thumbNailUrl: "/thumbnail/work/work_1.gif",
     category: "Web Development - React",
     description: "This is a sample project built with React.",
     github: "https://github.com/username/project1",
