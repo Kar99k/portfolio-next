@@ -6,6 +6,13 @@ import {
   UserRound,
 } from "lucide-react";
 
+import {
+  GithubIcon,
+  LinkedInIcon,
+  TwitterIcon,
+  WhatsappIcon,
+} from "@/components/icons";
+
 /* eslint-disable prettier/prettier */
 export type SiteConfig = typeof siteConfig;
 
@@ -39,10 +46,23 @@ export const siteConfig = {
       icon: Phone,
     },
   ],
-  links: {
-    linkedin: "https://www.linkedin.com/in/karthikeyan-venkateswaran/",
-    github: "https://github.com/Kar99k",
-    whatsapp: "",
-    twitter: "",
-  },
+
+  links: [
+    {
+      link: "https://www.linkedin.com/in/karthikeyan-venkateswaran/",
+      icon: LinkedInIcon,
+    },
+    {
+      link: "https://github.com/Kar99k",
+      icon: GithubIcon,
+    },
+    {
+      link: "",
+      icon: WhatsappIcon,
+    },
+    {
+      link: "",
+      icon: TwitterIcon,
+    },
+  ],
 };
