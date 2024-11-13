@@ -13,7 +13,7 @@ export default function Home() {
       <Divider />
 
       <SectionTemplate>
-        <div className="" />
+        <div className="h-24" />
       </SectionTemplate>
       <Divider />
 

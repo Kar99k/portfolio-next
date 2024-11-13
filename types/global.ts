@@ -10,13 +10,18 @@ declare global {
   };
 
   type HeadingProps = {
-    subtitle: string;
-    heading: string;
+    category: string;
+    title: string;
   };
 
-  interface ThumbnailProps {
-    thumbnailUrl: string;
-    subtitle: HeadingProps["subtitle"];
-    heading: HeadingProps["heading"];
+  interface ThumbnailProps extends HeadingProps {
+    thumbNailUrl: string;
+  }
+
+  interface WorkItem extends ThumbnailProps {
+    description: string;
+    github: string;
+    live: string;
+    md: string;
   }
 }

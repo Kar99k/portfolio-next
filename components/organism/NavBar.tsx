@@ -11,13 +11,7 @@ import NavItem from "../atom/NavItem";
 import { siteConfig } from "@/config/site";
 
 const NavBar = () => {
-  const [isOpen, setIsOpen] = useState(() => {
-    if (window.innerWidth >= 1280) {
-      return true;
-    }
-
-    return false;
-  });
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -29,11 +23,11 @@ const NavBar = () => {
         setIsOpen(true);
       } else setIsOpen(false);
     }
-
+    handleToggle();
     window.addEventListener("resize", handleToggle);
 
     return () => window.removeEventListener("resize", handleToggle);
-  });
+  }, []);
 
   return (
     <div className="border-gray-4 border-r-1 xl:h-dvh xl:w-[340px]">
