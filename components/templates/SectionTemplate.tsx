@@ -4,7 +4,7 @@ const SectionTemplate: React.FC<PropsWithChildren> = ({ children }) => {
   const [heading, ...otherChildren] = Children.toArray(children);
 
   return (
-    <div className="flex flex-col gap-8 p-4 md:px-8 xl:px-8">
+    <div className="flex flex-col gap-8 p-4 md:p-8">
       <div className="text-3xl">{heading}</div>
       {otherChildren?.map((child, index) => <div key={index}>{child}</div>)}
     </div>

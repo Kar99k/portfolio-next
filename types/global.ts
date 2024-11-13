@@ -24,4 +24,13 @@ declare global {
     live: string;
     md: string;
   }
+
+  type NameTag = {
+    name: string;
+    designation: string;
+  };
+
+  interface TestimonialCard extends NameTag {
+    comment: string;
+  }
 }

@@ -18,3 +18,18 @@ export const workItem: WorkItem[] = [
     md: "/content/work/project2.md",
   },
 ];
+
+export const testimonials = [
+  {
+    name: "John Smith",
+    designation: "CEO at Boeing",
+    comment:
+      "Jackson possesses an exceptional talent for translating complex ideas into stunning and user-centric designs. He consistently goes above and beyond to understand the core essence of a product and its intended audience, resulting in designs that are not only visually appealing but also highly functional.",
+  },
+  {
+    name: "John Smith",
+    designation: "CEO at Boeing",
+    comment:
+      "Jackson possesses an exceptional talent for translating complex ideas into stunning and user-centric designs. He consistently goes above and beyond to understand the core essence of a product and its intended audience, resulting in designs that are not only visually appealing but also highly functional.",
+  },
+];
