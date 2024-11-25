@@ -31,7 +31,7 @@ const FeaturedTemplate = ({ isBlog, heading }: FeaturedTemplate) => {
         })}
       </div>
       <div className="flex justify-center">
-        <Button className="w-full h-14" variant="bordered">
+        <Button className="w-full h-14 text-base" variant="bordered">
           View All {heading}
         </Button>
       </div>
