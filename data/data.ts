@@ -19,7 +19,7 @@ export const workItem: WorkItem[] = [
   },
 ];
 
-export const testimonials = [
+export const testimonials: TestimonialCard[] = [
   {
     name: "John Smith",
     designation: "CEO at Boeing",

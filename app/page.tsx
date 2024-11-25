@@ -2,7 +2,7 @@ import { Divider } from "@nextui-org/divider";
 
 import IntroContent from "@/components/organism/IntroContent";
 import SectionTemplate from "@/components/templates/SectionTemplate";
-import Works from "@/components/organism/Works";
+import Works from "@/components/templates/FeaturedTemplate";
 import Testimonials from "@/components/organism/Testimonials";
 
 export default function Home() {
@@ -19,12 +19,17 @@ export default function Home() {
       <Divider />
 
       <section className="container mx-auto">
-        <Works />
+        <Works heading="Works" isBlog={false} />
       </section>
       <Divider />
 
       <section className="container mx-auto">
         <Testimonials />
+      </section>
+      <Divider />
+
+      <section className="container mx-auto">
+        <Works heading="Blogs" isBlog={true} />
       </section>
       <Divider />
     </div>

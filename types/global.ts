@@ -16,6 +16,7 @@ declare global {
 
   interface ThumbnailProps extends HeadingProps {
     thumbNailUrl: string;
+    isBlog: boolean;
   }
 
   interface WorkItem extends ThumbnailProps {
@@ -32,5 +33,10 @@ declare global {
 
   interface TestimonialCard extends NameTag {
     comment: string;
+  }
+
+  interface FeaturedTemplate {
+    isBlog: boolean;
+    heading: string;
   }
 }
