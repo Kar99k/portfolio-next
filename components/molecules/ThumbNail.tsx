@@ -18,6 +18,7 @@ const ThumbNail = ({
   return (
     <div
       className={clsx({
+        "hover:text-orange-10": true,
         "flex flex-col gap-2": !isBlog,
         "flex flex-col xl:flex-row gap-2 xl:h-32 xl:items-center xl:gap-4":
           isBlog,
