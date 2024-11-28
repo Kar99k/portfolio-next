@@ -12,14 +12,14 @@ const BlogPost = async ({ params }: { params: { slug: string } }) => {
     process.cwd(),
     "public",
     "content",
-    "blogs", // Your folder structure with MDX files
+    "works", // Your folder structure with MDX files
     `${params.slug}.mdx`,
   );
 
   // Check if the file exists before trying to read it
   if (!fs.existsSync(filePath)) {
     // Handle file not found (optional)
-    return <div>Post not found</div>;
+    return <MDXRenderer serializedContent={""} />;
   }
 
   const mdxContent = fs.readFileSync(filePath, "utf-8");
