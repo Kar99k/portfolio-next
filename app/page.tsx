@@ -1,10 +1,11 @@
 import { Divider } from "@nextui-org/divider";
 
 import IntroContent from "@/components/organism/IntroContent";
-import SectionTemplate from "@/components/templates/SectionTemplate";
-import FeaturedTemplate from "@/components/templates/FeaturedTemplate";
+import Works from "@/components/organism/Works";
 import Testimonials from "@/components/organism/Testimonials";
 import Contact from "@/components/organism/Contact";
+import TechStack from "@/components/organism/TechStack";
+import Blogs from "@/components/organism/Blogs";
 
 export default function Home() {
   return (
@@ -14,13 +15,13 @@ export default function Home() {
       </section>
       <Divider />
 
-      <SectionTemplate>
-        <div className="h-36" />
-      </SectionTemplate>
+      <section className="container mx-auto">
+        <TechStack />
+      </section>
       <Divider />
 
       <section className="container mx-auto">
-        <FeaturedTemplate heading="Works" isBlog={false} />
+        <Works buttonVisible={true} perPage={3} />
       </section>
       <Divider />
 
@@ -30,7 +31,7 @@ export default function Home() {
       <Divider />
 
       <section className="container mx-auto">
-        <FeaturedTemplate heading="Blogs" isBlog={true} />
+        <Blogs buttonVisible={true} perPage={3} />
       </section>
       <Divider />
 

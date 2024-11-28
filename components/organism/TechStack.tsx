@@ -1,9 +1,12 @@
+"use client";
+
 import SectionTemplate from "../templates/SectionTemplate";
 
 const TechStack = () => {
   return (
     <SectionTemplate>
-      <div className="" />
+      <div></div>
+      <div></div>
     </SectionTemplate>
   );
 };

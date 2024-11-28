@@ -12,11 +12,11 @@ declare global {
   type HeadingProps = {
     category: string;
     title: string;
+    time?: string;
   };
 
   interface ThumbnailProps extends HeadingProps {
     thumbNailUrl: string;
-    isBlog: boolean;
   }
 
   interface WorkItem extends ThumbnailProps {
@@ -36,7 +36,13 @@ declare global {
   }
 
   interface FeaturedTemplate {
-    isBlog: boolean;
-    heading: string;
+    buttonVisible: boolean;
+    perPage?: number;
+  }
+
+  interface Blog extends ThumbnailProps {
+    description: string;
+    time: string;
+    md: string;
   }
 }

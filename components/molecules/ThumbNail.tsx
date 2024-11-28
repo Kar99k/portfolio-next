@@ -11,7 +11,8 @@ const ThumbNail = ({
   title,
   category,
   isBlog,
-}: ThumbnailProps) => {
+  time,
+}: ThumbnailProps & { isBlog: boolean }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (
@@ -22,7 +23,7 @@ const ThumbNail = ({
           isBlog,
       })}
     >
-      <div className="aspect-video rounded-lg overflow-hidden cursor-pointer min-w-64">
+      <div className="aspect-video rounded-lg overflow-hidden min-w-64">
         <Skeleton className="rounded-lg h-full" isLoaded={isLoaded}>
           <Image
             fill
@@ -36,7 +37,7 @@ const ThumbNail = ({
         </Skeleton>
       </div>
 
-      <SubHead category={category} title={title} />
+      <SubHead category={category} time={time} title={title} />
     </div>
   );
 };
