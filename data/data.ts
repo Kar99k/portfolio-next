@@ -6,7 +6,7 @@ export const workItem: WorkItem[] = [
     description: "This is a sample project built with React.",
     github: "https://github.com/username/project1",
     live: "https://project1.com",
-    md: "/content/work/project1.md",
+    slug: "task",
   },
   {
     title: "Project 2",
@@ -15,7 +15,7 @@ export const workItem: WorkItem[] = [
     description: "This is a sample project built with Flutter.",
     github: "https://github.com/username/project2",
     live: "https://project2.com",
-    md: "/content/work/project2.md",
+    slug: "task",
   },
   {
     title: "Project 3",
@@ -24,7 +24,7 @@ export const workItem: WorkItem[] = [
     description: "This is a sample project built with React.",
     github: "https://github.com/username/project1",
     live: "https://project1.com",
-    md: "/content/work/project1.md",
+    slug: "task",
   },
   {
     title: "Project 4",
@@ -33,7 +33,7 @@ export const workItem: WorkItem[] = [
     description: "This is a sample project built with Flutter.",
     github: "https://github.com/username/project2",
     live: "https://project2.com",
-    md: "/content/work/project2.md",
+    slug: "task",
   },
 ];
 
@@ -59,7 +59,7 @@ export const blogs: Blog[] = [
     category: "UI",
     description: "Learn how to create responsive layouts with CSS Grid.",
     time: "5min",
-    md: "",
+    slug: "task",
   },
   {
     title: "JavaScript ES6 Features",
@@ -67,7 +67,7 @@ export const blogs: Blog[] = [
     category: "JavaScript",
     description: "A quick guide to the essential ES6 features.",
     time: "7min",
-    md: "",
+    slug: "task",
   },
   {
     title: "React State Management",
@@ -75,7 +75,7 @@ export const blogs: Blog[] = [
     category: "React",
     description: "An overview of state management techniques in React.",
     time: "6min",
-    md: "",
+    slug: "task",
   },
   {
     title: "Accessibility in Web Design",
@@ -83,6 +83,6 @@ export const blogs: Blog[] = [
     category: "Web Design",
     description: "Make your websites accessible to everyone.",
     time: "8min",
-    md: "",
+    slug: "task",
   },
 ];

@@ -21,6 +21,7 @@ const Blogs = ({
                 key={index}
                 category={item.category}
                 isBlog={true}
+                slug={item.slug}
                 thumbNailUrl={item?.thumbNailUrl}
                 time={item.time}
                 title={item.title}

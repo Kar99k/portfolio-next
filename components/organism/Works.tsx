@@ -21,6 +21,7 @@ const Works = ({
                 key={index}
                 category={item.category}
                 isBlog={false}
+                slug={item.slug}
                 thumbNailUrl={item?.thumbNailUrl}
                 title={item.title}
               />

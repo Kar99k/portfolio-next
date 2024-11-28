@@ -10,7 +10,7 @@ import Blogs from "@/components/organism/Blogs";
 export default function Home() {
   return (
     <div className="">
-      <section className="container mx-auto">
+      <section className="container mx-auto ">
         <IntroContent />
       </section>
       <Divider />

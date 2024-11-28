@@ -17,13 +17,14 @@ declare global {
 
   interface ThumbnailProps extends HeadingProps {
     thumbNailUrl: string;
+    slug?: string;
   }
 
   interface WorkItem extends ThumbnailProps {
     description: string;
     github: string;
     live: string;
-    md: string;
+    slug: string;
   }
 
   type NameTag = {
@@ -43,6 +44,6 @@ declare global {
   interface Blog extends ThumbnailProps {
     description: string;
     time: string;
-    md: string;
+    slug: string;
   }
 }
