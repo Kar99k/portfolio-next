@@ -3,6 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
   transpilePackages: ["next-mdx-remote"],
   pageExtensions: ["js", "jsx", "ts", "tsx", "mdx"],
+  webpack(config, options) {
+    return config;
+  },
 };
 
 const withMDX = require("@next/mdx")({
