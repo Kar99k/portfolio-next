@@ -20,9 +20,9 @@ const MDXRenderer = ({
 
   return (
     <motion.div
-      animate={{ opacity: 1 }} // Target state, opacity will animate to 1
-      initial={{ opacity: 0 }} // Initial state, opacity is 0
-      transition={{ duration: 1 }} // Duration of the animation (in seconds)
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+      transition={{ duration: 1 }}
     >
       <article className="container prose max-w-screen-xl mx-auto py-8 px-6 xl:py-16 xl:px-12 flex flex-col gap-12">
         {buttonVisible && (
