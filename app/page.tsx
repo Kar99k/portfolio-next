@@ -9,7 +9,7 @@ import Blogs from "@/components/organism/Blogs";
 
 export default function Home() {
   return (
-    <div className="">
+    <div>
       <section className="container mx-auto ">
         <IntroContent />
       </section>

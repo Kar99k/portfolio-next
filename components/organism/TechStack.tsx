@@ -1,5 +1,3 @@
-"use client";
-
 import TechStackAtom from "../atom/TechStackAtom";
 import SectionTemplate from "../templates/SectionTemplate";
 

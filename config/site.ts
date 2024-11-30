@@ -1,10 +1,4 @@
-import {
-  BriefcaseBusiness,
-  House,
-  Newspaper,
-  Phone,
-  UserRound,
-} from "lucide-react";
+import { BriefcaseBusiness, House, Newspaper, UserRound } from "lucide-react";
 
 import {
   GithubIcon,
@@ -39,12 +33,7 @@ export const siteConfig = {
       label: "About",
       href: "/about",
       icon: UserRound,
-    },
-    {
-      label: "Contact",
-      href: "/contact",
-      icon: Phone,
-    },
+    }
   ],
 
   links: [

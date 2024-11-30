@@ -7,6 +7,7 @@ import { Providers } from "./providers";
 import { maison } from "@/config/fonts";
 import { siteConfig } from "@/config/site";
 import NavBar from "@/components/organism/NavBar";
+import Footer from "@/components/molecules/Footer";
 
 export const metadata: Metadata = {
   title: {
@@ -41,7 +42,12 @@ export default function RootLayout({
               <NavBar />
             </header>
 
-            <main className="w-full">{children}</main>
+            <div className="flex flex-col">
+              <main className="w-full">{children}</main>
+              <footer>
+                <Footer />
+              </footer>
+            </div>
           </div>
         </Providers>
       </body>
