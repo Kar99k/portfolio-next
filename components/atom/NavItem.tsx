@@ -3,7 +3,7 @@ import Link from "next/link";
 const NavItem = ({ name, Icon, href }: NavItem) => {
   return (
     <Link
-      className="flex gap-2 py-5 px-8 border-b-1 border-gray-4  h-full"
+      className="flex gap-2 py-5 px-8 border-b-1 border-gray-4  h-full hover:bg-zinc-900"
       href={href}
     >
       <Icon color="gray" size={20} />

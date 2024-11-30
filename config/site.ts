@@ -33,7 +33,7 @@ export const siteConfig = {
       label: "About",
       href: "/about",
       icon: UserRound,
-    }
+    },
   ],
 
   links: [
@@ -46,11 +46,11 @@ export const siteConfig = {
       icon: GithubIcon,
     },
     {
-      link: "",
+      link: "https://wa.me/+919751744041",
       icon: WhatsappIcon,
     },
     {
-      link: "",
+      link: "https://x.com/itsmesithappu",
       icon: TwitterIcon,
     },
   ],
