@@ -46,4 +46,9 @@ declare global {
     time: string;
     slug: string;
   }
+
+  interface TechStackAtomProps {
+    iconName: string;
+    title: string;
+  }
 }

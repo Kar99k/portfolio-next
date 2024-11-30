@@ -14,6 +14,7 @@
     "@next/mdx": "^15.0.3",
     "@nextui-org/avatar": "^2.0.33",
     "@nextui-org/button": "2.0.38",
+    "@nextui-org/card": "^2.0.34",
     "@nextui-org/chip": "^2.0.33",
     "@nextui-org/code": "2.0.33",
     "@nextui-org/divider": "^2.0.32",
@@ -39,7 +40,8 @@
     "next-mdx-remote": "^5.0.0",
     "next-themes": "^0.2.1",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "tech-stack-icons": "^2.1.0"
   },
   "devDependencies": {
     "@types/node": "20.5.7",

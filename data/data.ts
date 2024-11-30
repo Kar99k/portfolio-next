@@ -86,3 +86,11 @@ export const blogs: Blog[] = [
     slug: "task",
   },
 ];
+
+export const iconSet: TechStackAtomProps[] = [
+  { iconName: "tailwindcss", title: "Tailwind" },
+  { iconName: "js", title: "Javascript" },
+  { iconName: "typescript", title: "Typescript" },
+  { iconName: "reactjs", title: "React" },
+  { iconName: "nextjs2", title: "Next" },
+];
