@@ -35,6 +35,7 @@ const ThumbNail = ({
           <Image
             fill
             alt="Description of the image"
+            loading="lazy"
             objectFit="cover"
             src={thumbNailUrl}
             onLoadingComplete={() => {
