@@ -54,12 +54,13 @@ export const testimonials: TestimonialCard[] = [
 
 export const blogs: Blog[] = [
   {
-    title: "Mastering CSS Grid",
-    thumbNailUrl: "/thumbnail/work/work_1.gif",
+    title: "Modern UI Libraries Finds !",
+    thumbNailUrl: "/thumbnail/ui-libraries/ui_libraries_cover.jpg",
     category: "UI",
-    description: "Learn how to create responsive layouts with CSS Grid.",
-    time: "5min",
-    slug: "task",
+    description:
+      "Explore a selection of modern UI libraries that enhance web development with reusable components and innovative designs.",
+    time: "2 mins read",
+    slug: "modern-ui-libraries-finds",
   },
   {
     title: "JavaScript ES6 Features",
