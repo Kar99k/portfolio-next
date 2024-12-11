@@ -1,16 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  transpilePackages: ["next-mdx-remote"],
-  pageExtensions: ["js", "jsx", "ts", "tsx", "mdx"],
-  webpack(config, options) {
-    return config;
-  },
-};
+const nextConfig = {};
 
-const withMDX = require("@next/mdx")({
-  extension: /\.mdx?$/,
-});
-
-// Export the configuration wrapped with MDX support
-module.exports = withMDX(nextConfig);
+module.exports = nextConfig;

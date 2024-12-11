@@ -24,7 +24,7 @@ declare global {
     description: string;
     github: string;
     live: string;
-    slug: string;
+    pageId: string;
   }
 
   type NameTag = {
@@ -44,7 +44,7 @@ declare global {
   interface Blog extends ThumbnailProps {
     description: string;
     time: string;
-    slug: string;
+    pageId: string;
   }
 
   interface TechStackAtomProps {
