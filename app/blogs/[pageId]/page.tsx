@@ -1,10 +1,24 @@
+import NotionPage from "@/components/organism/NotionPage";
+import { fetchRecordMap } from "@/utils/util";
 
-const page = () => {
+export default async function Page({ params }) {
+  const { pageId } = await params;
+
+  let recordMap: any;
+
+  try {
+    recordMap = await fetchRecordMap(pageId);
+  } catch (error) {
+    return (
+      <main>
+        <p>No Page Found</p>
+      </main>
+    );
+  }
+
   return (
-    <div>
-      
-    </div>
-  )
+    <main>
+      <NotionPage recordMap={recordMap} />
+    </main>
+  );
 }
-
-export default page
