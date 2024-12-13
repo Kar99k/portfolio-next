@@ -13,7 +13,7 @@ const ThumbNail = ({
   category,
   isBlog,
   time,
-  slug,
+  pageId,
 }: ThumbnailProps & { isBlog: boolean }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -26,8 +26,8 @@ const ThumbNail = ({
           isBlog,
       })}
       href={clsx({
-        [`/works/${slug}`]: !isBlog,
-        [`/blogs/${slug}`]: isBlog,
+        [`/works/${pageId}`]: !isBlog,
+        [`/blogs/${pageId}`]: isBlog,
       })}
     >
       <div className="aspect-video rounded-lg overflow-hidden min-w-64">

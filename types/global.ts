@@ -17,14 +17,18 @@ declare global {
 
   interface ThumbnailProps extends HeadingProps {
     thumbNailUrl: string;
-    slug?: string;
+    pageId: string;
   }
 
   interface WorkItem extends ThumbnailProps {
     description: string;
     github: string;
     live: string;
-    pageId: string;
+  }
+
+  interface Blog extends ThumbnailProps {
+    description: string;
+    time: string;
   }
 
   type NameTag = {
@@ -39,12 +43,6 @@ declare global {
   interface FeaturedTemplate {
     buttonVisible: boolean;
     perPage?: number;
-  }
-
-  interface Blog extends ThumbnailProps {
-    description: string;
-    time: string;
-    pageId: string;
   }
 
   interface TechStackAtomProps {
