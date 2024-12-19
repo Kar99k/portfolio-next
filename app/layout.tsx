@@ -36,7 +36,9 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <head />
+      <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+      </head>
       <body className={clsx(maison.className, "min-h-screen dark:bg-BG")}>
         <SpeedInsights />
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>

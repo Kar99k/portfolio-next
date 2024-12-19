@@ -3,8 +3,10 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Grip, X } from "lucide-react";
-import { siteConfig } from "@/config/site";
+
 import NavItem from "../atom/NavItem";
+
+import { siteConfig } from "@/config/site";
 
 const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);

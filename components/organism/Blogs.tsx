@@ -4,7 +4,6 @@ import { Button } from "@nextui-org/button";
 import ThumbNail from "../molecules/ThumbNail";
 
 import SectionTemplate from "@/components/templates/SectionTemplate";
-import { fetchBlogsData } from "@/services/fetchBlogs";
 
 const Blogs = ({
   buttonVisible = true,

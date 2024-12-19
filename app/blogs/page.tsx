@@ -6,5 +6,5 @@ export const revalidate = 3600;
 export default async function Page() {
   const blogs = await fetchBlogsData();
 
-  return <Blogs buttonVisible={false} blogs={blogs} perPage={blogs?.length}/>;
+  return <Blogs blogs={blogs} buttonVisible={false} perPage={blogs?.length} />;
 }
