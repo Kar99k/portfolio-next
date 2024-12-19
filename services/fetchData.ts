@@ -15,7 +15,7 @@ export async function fetchRecordMap(pageId: string) {
 }
 
 // Function to query a database
-export const queryDatabase = async (databaseId) => {
+export const queryDatabase = async (databaseId: string) => {
   const notion = new Client({
     auth: process.env.NOTION_TOKEN,
   });
