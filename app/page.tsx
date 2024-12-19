@@ -7,11 +7,13 @@ import Contact from "@/components/organism/Contact";
 import TechStack from "@/components/organism/TechStack";
 import Blogs from "@/components/organism/Blogs";
 import { fetchBlogsData } from "@/services/fetchBlogs";
+import { fetchWorksData } from "@/services/fetchWorks";
 
 export const revalidate = 3600;
 
 export default async function Home() {
   const blogs = await fetchBlogsData();
+  const works = await fetchWorksData();
 
   return (
     <div>
@@ -26,7 +28,7 @@ export default async function Home() {
       <Divider />
 
       <section className="container mx-auto">
-        <Works buttonVisible={true} perPage={3} />
+        <Works buttonVisible={true} perPage={3} works={works} />
       </section>
       <Divider />
 
