@@ -6,7 +6,7 @@ export const workItem: WorkItem[] = [
     description: "This is a sample project built with React.",
     github: "https://github.com/username/project1",
     live: "https://project1.com",
-    slug: "task",
+    pageId: "6582c5b92a1b493b91ab75bb25ab74fb",
   },
   {
     title: "Project 2",
@@ -15,7 +15,7 @@ export const workItem: WorkItem[] = [
     description: "This is a sample project built with Flutter.",
     github: "https://github.com/username/project2",
     live: "https://project2.com",
-    slug: "task",
+    pageId: "2510878714d947ad88ca1bb45be2ae36",
   },
   {
     title: "Project 3",
@@ -24,7 +24,7 @@ export const workItem: WorkItem[] = [
     description: "This is a sample project built with React.",
     github: "https://github.com/username/project1",
     live: "https://project1.com",
-    slug: "task",
+    pageId: "d3304711626f4a77ac94d6667dd37f3b",
   },
   {
     title: "Project 4",
@@ -33,7 +33,7 @@ export const workItem: WorkItem[] = [
     description: "This is a sample project built with Flutter.",
     github: "https://github.com/username/project2",
     live: "https://project2.com",
-    slug: "task",
+    pageId: "f33148c4879b47dcadce83f64ef87dcc",
   },
 ];
 
@@ -60,7 +60,7 @@ export const blogs: Blog[] = [
     description:
       "Explore a selection of modern UI libraries that enhance web development with reusable components and innovative designs.",
     time: "2 mins read",
-    slug: "modern-ui-libraries-finds",
+    pageId: "d3304711626f4a77ac94d6667dd37f3b",
   },
   {
     title: "JavaScript ES6 Features",
@@ -68,7 +68,7 @@ export const blogs: Blog[] = [
     category: "JavaScript",
     description: "A quick guide to the essential ES6 features.",
     time: "7min",
-    slug: "task",
+    pageId: "f33148c4879b47dcadce83f64ef87dcc",
   },
   {
     title: "React State Management",
@@ -76,7 +76,7 @@ export const blogs: Blog[] = [
     category: "React",
     description: "An overview of state management techniques in React.",
     time: "6min",
-    slug: "task",
+    pageId: "5df44633102a43c8bb29fff379d5a319",
   },
   {
     title: "Accessibility in Web Design",
@@ -84,7 +84,7 @@ export const blogs: Blog[] = [
     category: "Web Design",
     description: "Make your websites accessible to everyone.",
     time: "8min",
-    slug: "task",
+    pageId: "f33148c4879b47dcadce83f64ef87dcc",
   },
 ];
 

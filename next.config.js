@@ -1,16 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  transpilePackages: ["next-mdx-remote"],
-  pageExtensions: ["js", "jsx", "ts", "tsx", "mdx"],
-  webpack(config, options) {
-    return config;
+  env: {
+    NOTION_ACTIVE_USER: process.env.NOTION_ACTIVE_USER,
+    NOTION_AUTH_TOKEN: process.env.NOTION_AUTH_TOKEN,
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "prod-files-secure.s3.us-west-2.amazonaws.com",
+        pathname: "/**", // Match all paths under this domain
+      },
+    ],
   },
 };
 
-const withMDX = require("@next/mdx")({
-  extension: /\.mdx?$/,
-});
-
-// Export the configuration wrapped with MDX support
-module.exports = withMDX(nextConfig);
+module.exports = nextConfig;
