@@ -11,14 +11,10 @@ export default async function Page({ params }) {
   } catch (error) {
     return (
       <main>
-        <p>No Page Found</p>
+        <p>No Page Found:{JSON.stringify(error)}</p>
       </main>
     );
   }
 
-  return (
-    <main>
-      <NotionPage recordMap={recordMap} />
-    </main>
-  );
+  return <NotionPage recordMap={recordMap} />;
 }

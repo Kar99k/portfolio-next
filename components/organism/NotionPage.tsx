@@ -10,7 +10,7 @@ export default function NotionPage({ recordMap }) {
   return (
     <section className="container mx-auto">
       <NotionRenderer
-        className="notion-renderer"
+        className="!bg-BG"
         darkMode={true}
         disableHeader={true}
         fullPage={true}
