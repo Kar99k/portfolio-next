@@ -8,10 +8,10 @@ export default async function Page({ params }) {
 
   try {
     recordMap = await fetchRecordMap(pageId);
-  } catch (error) {
+  } catch {
     return (
       <main>
-        <p>No Page Found:{JSON.stringify(error)}</p>
+        <p>No Page Found</p>
       </main>
     );
   }

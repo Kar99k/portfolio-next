@@ -8,7 +8,7 @@ export default async function Page({ params }) {
 
   try {
     recordMap = await fetchRecordMap(pageId);
-  } catch (error) {
+  } catch {
     return (
       <main>
         <p>No Page Found</p>
@@ -16,9 +16,5 @@ export default async function Page({ params }) {
     );
   }
 
-  return (
-    <main>
-      <NotionPage recordMap={recordMap} />
-    </main>
-  );
+  return <NotionPage recordMap={recordMap} />;
 }
