@@ -4,16 +4,19 @@ import { Button } from "@nextui-org/button";
 import ThumbNail from "../molecules/ThumbNail";
 
 import SectionTemplate from "@/components/templates/SectionTemplate";
-import { blogs } from "@/data/data";
+import { fetchBlogsData } from "@/services/fetchBlogs";
 
 const Blogs = ({
   buttonVisible = true,
-  perPage = blogs.length,
-}: FeaturedTemplate) => {
+  perPage = 10,
+  blogs,
+}: FeaturedTemplate & { blogs: Blog[] }) => {
   return (
     <SectionTemplate>
       <div className="text-3xl">Blogs</div>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:flex xl:flex-col xl:gap-12">
+        {blogs?.length === 0 ? "loading" : ""}
+
         {blogs?.map((item, index) => {
           if (index < perPage)
             return (

@@ -1,11 +1,10 @@
 import Works from "@/components/organism/Works";
+import { fetchWorksData } from "@/services/fetchWorks";
 
-const page = () => {
-  return (
-    <section className="container mx-auto xl:py-8">
-      <Works buttonVisible={false} />
-    </section>
-  );
-};
+export const revalidate = 3600;
 
-export default page;
+export default async function Page() {
+  const works = await fetchWorksData();
+
+  return <Works buttonVisible={false} perPage={works.length} works={works} />;
+}

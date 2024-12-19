@@ -1,11 +1,10 @@
 import Blogs from "@/components/organism/Blogs";
+import { fetchBlogsData } from "@/services/fetchBlogs";
 
-const page = () => {
-  return (
-    <section className="container mx-auto xl:py-8">
-      <Blogs buttonVisible={false} />
-    </section>
-  );
-};
+export const revalidate = 3600;
 
-export default page;
+export default async function Page() {
+  const blogs = await fetchBlogsData();
+
+  return <Blogs buttonVisible={false} blogs={blogs} perPage={blogs?.length}/>;
+}
