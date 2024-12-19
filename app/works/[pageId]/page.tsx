@@ -1,5 +1,5 @@
 import NotionPage from "@/components/organism/NotionPage";
-import { fetchRecordMap } from "@/utils/util";
+import { fetchRecordMap } from "@/services/fetchData";
 
 export default async function Page({ params }) {
   const { pageId } = await params;
