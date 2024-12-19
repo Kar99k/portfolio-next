@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 import { Divider } from "@nextui-org/divider";
 import clsx from "clsx";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import { Providers } from "./providers";
 
@@ -37,6 +38,7 @@ export default function RootLayout({
     <html suppressHydrationWarning lang="en">
       <head />
       <body className={clsx(maison.className, "min-h-screen dark:bg-BG")}>
+        <SpeedInsights />
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="flex flex-col xl:grid xl:grid-cols-[340px_1fr] min-h-screen">
             <header className="xl:sticky xl:top-0 xl:h-screen bg-BG">
