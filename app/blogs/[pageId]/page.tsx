@@ -1,5 +1,8 @@
 import NotionPage from "@/components/organism/NotionPage";
+import { fetchBlogsData } from "@/services/fetchBlogs";
 import { fetchRecordMap } from "@/services/fetchData";
+
+export const revalidate = 3600;
 
 export default async function Page({ params }) {
   const { pageId } = await params;
@@ -17,4 +20,12 @@ export default async function Page({ params }) {
   }
 
   return <NotionPage recordMap={recordMap} />;
+}
+
+export async function generateStaticParams() {
+  const blogs = await fetchBlogsData();
+
+  return blogs.map((blog) => ({
+    pageId: blog.pageId,
+  }));
 }

@@ -6,8 +6,13 @@ import Testimonials from "@/components/organism/Testimonials";
 import Contact from "@/components/organism/Contact";
 import TechStack from "@/components/organism/TechStack";
 import Blogs from "@/components/organism/Blogs";
+import { fetchBlogsData } from "@/services/fetchBlogs";
 
-export default function Home() {
+export const revalidate = 3600;
+
+export default async function Home() {
+  const blogs = await fetchBlogsData();
+
   return (
     <div>
       <section className="container mx-auto ">
@@ -31,7 +36,7 @@ export default function Home() {
       <Divider />
 
       <section className="container mx-auto">
-        <Blogs buttonVisible={true} perPage={3} />
+        <Blogs blogs={blogs} buttonVisible={true} perPage={3} />
       </section>
       <Divider />
 
