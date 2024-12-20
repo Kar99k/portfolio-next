@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Button } from "@nextui-org/button";
 
 import ThumbNail from "../molecules/ThumbNail";
 
@@ -33,10 +32,11 @@ const Blogs = ({
       </div>
       {buttonVisible && (
         <div className="flex justify-center">
-          <Link className="w-full" href="/blogs">
-            <Button className="w-full h-14 text-base" variant="bordered">
-              View All Blogs
-            </Button>
+          <Link
+            className="w-full h-14 text-base border-[1px] border-zinc-800 flex justify-center items-center rounded-xl hover:bg-zinc-900"
+            href="/blogs"
+          >
+            View All Blogs
           </Link>
         </div>
       )}

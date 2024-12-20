@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Grip, X } from "lucide-react";
 
@@ -10,13 +10,28 @@ import { siteConfig } from "@/config/site";
 
 const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement | null>(null);
 
   const toggleMenu = () => {
     setIsOpen((prev) => !prev);
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener("click", handleClickOutside);
+
+    return () => {
+      window.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div className="xl:hidden">
+    <div ref={menuRef} className="xl:hidden" id="mobile-menu">
       <div
         aria-controls="nav-items"
         aria-expanded={isOpen}

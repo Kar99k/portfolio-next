@@ -9,7 +9,7 @@ import Blogs from "@/components/organism/Blogs";
 import { fetchBlogsData } from "@/services/fetchBlogs";
 import { fetchWorksData } from "@/services/fetchWorks";
 
-export const revalidate = 3600;
+export const revalidate = 1800;
 
 export default async function Home() {
   const blogs = await fetchBlogsData();
