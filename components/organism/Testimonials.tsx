@@ -11,7 +11,7 @@ const Testimonials = () => {
         <div className="absolute left-0 top-0 bottom-0 w-16 pointer-events-none z-10 bg-gradient-to-r from-BG to-transparent" />
         <div className="absolute right-0 top-0 bottom-0 w-16 pointer-events-none z-10 bg-gradient-to-l from-BG to-transparent" />
 
-        <Marquee pauseOnHover className="[--duration:20s] w-full" >
+        <Marquee pauseOnHover className="[--duration:20s] w-full">
           {testimonials.map((item, index) => {
             return (
               <TestimonialCard
