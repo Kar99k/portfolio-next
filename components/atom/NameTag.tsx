@@ -1,17 +1,19 @@
 import { Avatar } from "@nextui-org/avatar";
+import Link from "next/link";
 
-const NameTag = ({ name, designation }: NameTag) => {
+const NameTag = ({ name, designation, photoUrl, linkedin }: NameTag) => {
   return (
     <div className="flex gap-4">
-      <Avatar
-        isBordered
-        color="primary"
-        src="https://i.pravatar.cc/150?u=a04258a2462d826712d"
-      />
-      <div className="flex flex-col gap-1">
-        <span className="text-base ">{name}</span>
+      <Avatar isBordered color="primary" src={photoUrl} />
+      <Link
+        className="flex flex-col gap-1 cursor-pointer"
+        href={linkedin}
+        rel="noreferrer"
+        target="_blank"
+      >
+        <span className="text-base hover:underline">{name}</span>
         <span className="text-xs text-gray-8">{designation}</span>
-      </div>
+      </Link>
     </div>
   );
 };

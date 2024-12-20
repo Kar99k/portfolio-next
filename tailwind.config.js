@@ -1,13 +1,14 @@
 import { nextui } from "@nextui-org/theme";
+import tailwindcssAnimate from "tailwindcss-animate";
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  darkMode: "class",
+  darkMode: ["class"],
   content: [
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
-    "./styles/**/*.{css}",
+    "./styles/**/*.css",
   ],
   theme: {
     extend: {
@@ -26,8 +27,35 @@ export default {
         "maison-medium": ["MaisonNeue-ExtendedMedium", "sans-serif"],
         "maison-light": ["MaisonNeue-ExtendedLight", "sans-serif"],
       },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
+      keyframes: {
+        marquee: {
+          from: {
+            transform: "translateX(0)",
+          },
+          to: {
+            transform: "translateX(calc(-100% - var(--gap)))",
+          },
+        },
+        "marquee-vertical": {
+          from: {
+            transform: "translateY(0)",
+          },
+          to: {
+            transform: "translateY(calc(-100% - var(--gap)))",
+          },
+        },
+      },
+      animation: {
+        marquee: "marquee var(--duration) infinite linear",
+        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
+      },
     },
   },
   darkMode: "class",
-  plugins: [nextui()],
+  plugins: [nextui(), tailwindcssAnimate],
 };

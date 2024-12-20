@@ -34,6 +34,8 @@ declare global {
   type NameTag = {
     name: string;
     designation: string;
+    photoUrl: string;
+    linkedin: string;
   };
 
   interface TestimonialCard extends NameTag {
