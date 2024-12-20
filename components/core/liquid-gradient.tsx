@@ -51,13 +51,17 @@ const createStopsArray = (
   maxStops: number,
 ): Stop[][] => {
   let stopsArray: Stop[][] = [];
+
   for (let i = 0; i < maxStops; i++) {
     let stopConfigurations = svgOrder.map((svgKey) => {
       let svg = svgStates[svgKey];
+
       return svg.stops[i] || svg.stops[svg.stops.length - 1];
     });
+
     stopsArray.push(stopConfigurations);
   }
+
   return stopsArray;
 };
 
@@ -175,37 +179,37 @@ const GradientSvg: React.FC<GradientSvgProps> = ({
   return (
     <svg
       className={className}
-      width="1030"
+      fill="none"
       height="280"
       viewBox="0 0 1030 280"
-      fill="none"
+      width="1030"
       xmlns="http://www.w3.org/2000/svg"
     >
       <rect
-        width="1030"
+        fill="url(#paint0_radial_905_231)"
         height="280"
         rx="140"
-        fill="url(#paint0_radial_905_231)"
+        width="1030"
       />
       <defs>
         <motion.radialGradient
-          id="paint0_radial_905_231"
+          animate={isHovered ? variants.hovered : variants.notHovered}
           cx="0"
           cy="0"
-          r="1"
           gradientUnits="userSpaceOnUse"
-          animate={isHovered ? variants.hovered : variants.notHovered}
+          id="paint0_radial_905_231"
+          r="1"
         >
           {stopsAnimationArray.map((stopConfigs, index) => (
             <AnimatePresence key={index}>
               <motion.stop
-                initial={{
-                  offset: stopConfigs[0].offset,
-                  stopColor: stopConfigs[0].stopColor,
-                }}
                 animate={{
                   offset: stopConfigs.map((config) => config.offset),
                   stopColor: stopConfigs.map((config) => config.stopColor),
+                }}
+                initial={{
+                  offset: stopConfigs[0].offset,
+                  stopColor: stopConfigs[0].stopColor,
                 }}
                 transition={{
                   duration: 0,
@@ -252,8 +256,8 @@ export const Liquid: React.FC<LiquidProps> = ({ isHovered, colors }) => {
         >
           <GradientSvg
             className="w-full h-full"
-            isHovered={isHovered}
             colors={colors}
+            isHovered={isHovered}
           />
         </div>
       ))}

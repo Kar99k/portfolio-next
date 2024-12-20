@@ -8,7 +8,7 @@ const IntroContent = () => {
     <div className="flex flex-col gap-4 p-4 md:p-8 xl:p-12 xl:gap-8">
       <div className="flex justify-between">
         <Image alt="avatars" height={103} src="/image/avatar.png" width={106} />
-          <SpecialButton />
+        <SpecialButton />
       </div>
       <span className="text-3xl xl:text-4xl max-w-screen-lg">
         Hey, I’m Karthikeyan—a <i>passionate</i> Frontend Engineer and tech
