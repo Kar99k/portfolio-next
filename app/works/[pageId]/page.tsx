@@ -2,6 +2,8 @@ import NotionPage from "@/components/organism/NotionPage";
 import { fetchRecordMap } from "@/services/fetchData";
 import { fetchWorksData } from "@/services/fetchWorks";
 
+export const revalidate = 1800;
+
 export default async function Page({ params }) {
   const { pageId } = await params;
 
