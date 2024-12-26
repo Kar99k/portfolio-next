@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import ThumbNail from "../molecules/ThumbNail";
 import SectionTemplate from "../templates/SectionTemplate";
+import Image from "next/image";
 
 const Works = ({
   buttonVisible = true,
@@ -10,7 +11,19 @@ const Works = ({
 }: FeaturedTemplate & { works: WorkItem[] }) => {
   return (
     <SectionTemplate>
-      <div className="text-3xl">Works</div>
+      <div className="text-3xl">
+        <div className="flex flex-col">
+          Works
+          <Image
+            alt="workinprogress"
+            className="z-10 ml-3.5 -mt-5 animate-swing"
+            height={50}
+            src="/image/workInProgress.png"
+            style={{ transformOrigin: "center top" }}
+            width={50}
+          />
+        </div>
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
         {works?.map((item, index) => {
           if (index < perPage)

@@ -49,10 +49,15 @@ export default {
             transform: "translateY(calc(-100% - var(--gap)))",
           },
         },
+        swing: {
+          "0%, 100%": { transform: "rotate(-10deg)" },
+          "50%": { transform: "rotate(10deg)" },
+        },
       },
       animation: {
         marquee: "marquee var(--duration) infinite linear",
         "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
+        swing: "swing 1.5s ease-in-out infinite",
       },
     },
   },

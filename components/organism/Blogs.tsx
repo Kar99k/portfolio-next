@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import ThumbNail from "../molecules/ThumbNail";
 
@@ -11,7 +12,19 @@ const Blogs = ({
 }: FeaturedTemplate & { blogs: Blog[] }) => {
   return (
     <SectionTemplate>
-      <div className="text-3xl">Blogs</div>
+      <div className="text-3xl">
+        <div className="flex flex-col">
+          Blogs
+          <Image
+            alt="workinprogress"
+            className="z-10 ml-3 -mt-5 animate-swing"
+            height={50}
+            src="/image/workInProgress.png"
+            style={{ transformOrigin: "center top" }}
+            width={50}
+          />
+        </div>
+      </div>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:flex xl:flex-col xl:gap-12">
         {blogs?.length === 0 ? "loading" : ""}
 
