@@ -48,7 +48,7 @@ export default function RootLayout({
               <NavBar />
             </header>
 
-            <div className="flex flex-col">
+            <div className="flex flex-col bg-BG">
               <main className="w-full">{children}</main>
               <footer>
                 <Footer />
