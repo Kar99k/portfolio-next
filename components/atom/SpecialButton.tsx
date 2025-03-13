@@ -31,7 +31,7 @@ const SpecialButton: React.FC = () => {
     <div className="flex justify-center">
       <a
         className="relative inline-block sm:w-48 w-14 h-[2.7em] mx-auto group dark:bg-black bg-white dark:border-white border-black border-2 rounded-lg"
-        href="https://shorturl.at/7cQ6R"
+        href="https://docs.google.com/document/d/1_xz3nnY8nv_N2RbuiGq5fEjSLUx14nha/edit?usp=sharing&ouid=102944450583266580596&rtpof=true&sd=true"
         rel="noreferrer"
         target="_blank"
       >
