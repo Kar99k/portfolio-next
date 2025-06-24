@@ -37,10 +37,10 @@ export default async function Home() {
       </section>
       <Divider />
 
-      <section className="container mx-auto">
+      {/* <section className="container mx-auto">
         <Blogs blogs={blogs} buttonVisible={true} perPage={3} />
       </section>
-      <Divider />
+      <Divider /> */}
 
       <section className="container mx-auto">
         <Contact />
