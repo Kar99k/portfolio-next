@@ -25,11 +25,6 @@ export const siteConfig = {
       icon: BriefcaseBusiness,
     },
     {
-      label: "Blogs",
-      href: "/blogs",
-      icon: Newspaper,
-    },
-    {
       label: "About",
       href: "/about",
       icon: UserRound,
