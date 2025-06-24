@@ -22,12 +22,12 @@ export const transformResponseToBlogs = (data: any): Blog[] => {
 export const transformResponseToWorks = (data: any): WorkItem[] => {
   return data.results.map((item: any) => {
     const title = item.properties.Title.title[0]?.plain_text || "";
-    const thumbNailUrl = item.properties.Thumbnail.files[0]?.file.url || "";
     const category = item.properties.Category?.select?.name;
     const pageId = item.id;
+    const thumbNailUrl = `/thumbnail/work/${pageId}.webp`
     const github = item.properties.Github.url;
     const live = item.properties.Live.url;
-
+    console.log(pageId)
     return {
       title,
       thumbNailUrl,
